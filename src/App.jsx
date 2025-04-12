@@ -2,6 +2,8 @@ import { useState } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router";
 import SingletonComponent from "./apps/SingletonComponent";
 import "./App.css";
+import ProxyComponent from "./apps/ProxyComponent";
+import FactoryComponent from "./apps/FactoryComponent";
 
 const IndexComp = () => {
   return (
@@ -9,6 +11,12 @@ const IndexComp = () => {
       Hello
       <p>
         <Link to="/singleton"> Singleton APP</Link>
+      </p>
+      <p>
+        <Link to="/proxy"> Proxy APP</Link>
+      </p>
+      <p>
+        <Link to="/factory"> Factory APP</Link>
       </p>
     </>
   );
@@ -23,6 +31,8 @@ function App() {
         <Routes>
           <Route index element={<IndexComp />} />
           <Route path="/singleton" element={<SingletonComponent />} />
+          <Route path="/proxy" element={<ProxyComponent />} />
+          <Route path="/factory" element={<FactoryComponent />} />
         </Routes>
       </BrowserRouter>
     </>
