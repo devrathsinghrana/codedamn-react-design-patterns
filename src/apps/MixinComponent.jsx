@@ -70,7 +70,7 @@ Object.assign(Viewer.prototype, commonUserActions);
 
 const admin = new Admin("Alice");
 const editor = new Editor("Bob");
-console.log(tuffy);
+
 const MixinComponent = () => {
   return (
     <div>
