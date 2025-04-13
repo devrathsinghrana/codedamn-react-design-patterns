@@ -8,9 +8,10 @@ const useStore = (value) => {
     Store.subscribe(setState);
     return () => {
       Store.unsubscribe(setState);
+      Store.counter = 0;
     };
   }, []);
-  
+
   return state;
 };
 
