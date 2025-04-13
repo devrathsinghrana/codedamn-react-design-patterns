@@ -1,7 +1,10 @@
 import React from "react";
 
 const animalFn = {
-  walk: () => <p>Walking...</p>,
+  // converted to normal fuction to make this work properly
+  walk() {
+    return <p>{this.name} Walking...</p>;
+  },
   sleep: () => <p>Sleeping...</p>,
 };
 
