@@ -6,6 +6,7 @@ import ProxyComponent from "./apps/ProxyComponent";
 import FactoryComponent from "./apps/FactoryComponent";
 import ObserverComponent from "./apps/ObserverComponent";
 import MixinComponent from "./apps/MixinComponent";
+import ModularComponent from "./apps/ModularComponent";
 
 const IndexComp = () => {
   return (
@@ -26,13 +27,14 @@ const IndexComp = () => {
       <p>
         <Link to="/mixin"> Mixin APP</Link>
       </p>
+      <p>
+        <Link to="/modular"> Modular APP</Link>
+      </p>
     </>
   );
 };
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
@@ -43,6 +45,7 @@ function App() {
           <Route path="/factory" element={<FactoryComponent />} />
           <Route path="/observer" element={<ObserverComponent />} />
           <Route path="/mixin" element={<MixinComponent />} />
+          <Route path="/modular" element={<ModularComponent />} />
         </Routes>
       </BrowserRouter>
     </>
