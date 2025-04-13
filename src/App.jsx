@@ -5,6 +5,7 @@ import "./App.css";
 import ProxyComponent from "./apps/ProxyComponent";
 import FactoryComponent from "./apps/FactoryComponent";
 import ObserverComponent from "./apps/ObserverComponent";
+import MixinComponent from "./apps/MixinComponent";
 
 const IndexComp = () => {
   return (
@@ -22,6 +23,9 @@ const IndexComp = () => {
       <p>
         <Link to="/observer"> Observer APP</Link>
       </p>
+      <p>
+        <Link to="/mixin"> Mixin APP</Link>
+      </p>
     </>
   );
 };
@@ -38,6 +42,7 @@ function App() {
           <Route path="/proxy" element={<ProxyComponent />} />
           <Route path="/factory" element={<FactoryComponent />} />
           <Route path="/observer" element={<ObserverComponent />} />
+          <Route path="/mixin" element={<MixinComponent />} />
         </Routes>
       </BrowserRouter>
     </>
