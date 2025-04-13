@@ -4,6 +4,7 @@ import SingletonComponent from "./apps/SingletonComponent";
 import "./App.css";
 import ProxyComponent from "./apps/ProxyComponent";
 import FactoryComponent from "./apps/FactoryComponent";
+import ObserverComponent from "./apps/ObserverComponent";
 
 const IndexComp = () => {
   return (
@@ -17,6 +18,9 @@ const IndexComp = () => {
       </p>
       <p>
         <Link to="/factory"> Factory APP</Link>
+      </p>
+      <p>
+        <Link to="/observer"> Observer APP</Link>
       </p>
     </>
   );
@@ -33,6 +37,7 @@ function App() {
           <Route path="/singleton" element={<SingletonComponent />} />
           <Route path="/proxy" element={<ProxyComponent />} />
           <Route path="/factory" element={<FactoryComponent />} />
+          <Route path="/observer" element={<ObserverComponent />} />
         </Routes>
       </BrowserRouter>
     </>
