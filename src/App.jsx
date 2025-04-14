@@ -8,6 +8,7 @@ import ObserverComponent from "./apps/ObserverComponent";
 import MixinComponent from "./apps/MixinComponent";
 import ModularComponent from "./apps/ModularComponent";
 import CommandComponent from "./apps/CommandComponent";
+import HigherOrderComponent from "./apps/HigherOrderComponent";
 
 const IndexComp = () => {
   return (
@@ -34,6 +35,9 @@ const IndexComp = () => {
       <p>
         <Link to="/command"> Command APP</Link>
       </p>
+      <p>
+        <Link to="/hoc"> HOC APP</Link>
+      </p>
     </>
   );
 };
@@ -51,6 +55,7 @@ function App() {
           <Route path="/mixin" element={<MixinComponent />} />
           <Route path="/modular" element={<ModularComponent />} />
           <Route path="/command" element={<CommandComponent />} />
+          <Route path="/hoc" element={<HigherOrderComponent />} />
         </Routes>
       </BrowserRouter>
     </>
