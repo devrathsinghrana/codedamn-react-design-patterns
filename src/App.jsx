@@ -9,6 +9,7 @@ import MixinComponent from "./apps/MixinComponent";
 import ModularComponent from "./apps/ModularComponent";
 import CommandComponent from "./apps/CommandComponent";
 import HigherOrderComponent from "./apps/HigherOrderComponent";
+import ContextComponent from "./apps/ContextComponent";
 
 const IndexComp = () => {
   return (
@@ -38,6 +39,9 @@ const IndexComp = () => {
       <p>
         <Link to="/hoc"> HOC APP</Link>
       </p>
+      <p>
+        <Link to="/context"> Context APP</Link>
+      </p>
     </>
   );
 };
@@ -56,6 +60,7 @@ function App() {
           <Route path="/modular" element={<ModularComponent />} />
           <Route path="/command" element={<CommandComponent />} />
           <Route path="/hoc" element={<HigherOrderComponent />} />
+          <Route path="/context" element={<ContextComponent />} />
         </Routes>
       </BrowserRouter>
     </>
