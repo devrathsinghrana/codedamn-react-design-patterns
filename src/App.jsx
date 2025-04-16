@@ -11,6 +11,8 @@ import CommandComponent from "./apps/CommandComponent";
 import HigherOrderComponent from "./apps/HigherOrderComponent";
 import ContextComponent from "./apps/ContextComponent";
 import SelectCompoundComponent from "./apps/SelectCompoundComponent";
+import SimpleSelectComponent from "./apps/SimpleSelectComponent";
+import CompoundSelectComponent from "./apps/CompoundSelectComponent";
 
 const IndexComp = () => {
   return (
@@ -46,6 +48,12 @@ const IndexComp = () => {
       <p>
         <Link to="/compound"> Compound APP</Link>
       </p>
+      <p>
+        <Link to="/simple-select"> SimpleSelect APP</Link>
+      </p>
+      <p>
+        <Link to="/compound-select"> CompoundSelect APP</Link>
+      </p>
     </>
   );
 };
@@ -66,6 +74,11 @@ function App() {
           <Route path="/hoc" element={<HigherOrderComponent />} />
           <Route path="/context" element={<ContextComponent />} />
           <Route path="/compound" element={<SelectCompoundComponent />} />
+          <Route path="/simple-select" element={<SimpleSelectComponent />} />
+          <Route
+            path="/compound-select"
+            element={<CompoundSelectComponent />}
+          />
         </Routes>
       </BrowserRouter>
     </>
