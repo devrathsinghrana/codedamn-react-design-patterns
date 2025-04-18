@@ -13,6 +13,7 @@ import ContextComponent from "./apps/ContextComponent";
 import SelectCompoundComponent from "./apps/SelectCompoundComponent";
 import SimpleSelectComponent from "./apps/SimpleSelectComponent";
 import CompoundSelectComponent from "./apps/CompoundSelectComponent";
+import ReduxComponent from "./apps/ReduxComponent";
 
 const IndexComp = () => {
   return (
@@ -54,6 +55,9 @@ const IndexComp = () => {
       <p>
         <Link to="/compound-select"> CompoundSelect APP</Link>
       </p>
+      <p>
+        <Link to="/normal-redux"> Normal Redux APP</Link>
+      </p>
     </>
   );
 };
@@ -79,6 +83,7 @@ function App() {
             path="/compound-select"
             element={<CompoundSelectComponent />}
           />
+          <Route path="/normal-redux" element={<ReduxComponent />} />
         </Routes>
       </BrowserRouter>
     </>
