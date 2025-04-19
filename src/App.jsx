@@ -15,6 +15,7 @@ import SimpleSelectComponent from "./apps/SimpleSelectComponent";
 import CompoundSelectComponent from "./apps/CompoundSelectComponent";
 import ReduxComponent from "./apps/ReduxComponent";
 import ReduxToolkitComponent from "./apps/ReduxToolkitComponent";
+import ReduxToolkitQueryComponent from "./apps/ReduxToolkitQueryComponent";
 
 const IndexComp = () => {
   return (
@@ -56,11 +57,12 @@ const IndexComp = () => {
       <p>
         <Link to="/compound-select"> CompoundSelect APP</Link>
       </p>
-      <p>
-        {/* <Link to="/normal-redux"> Normal Redux APP</Link> */}
-      </p>
+      <p>{/* <Link to="/normal-redux"> Normal Redux APP</Link> */}</p>
       <p>
         <Link to="/redux-toolkit"> Redux Toolkit APP</Link>
+      </p>
+      <p>
+        <Link to="/redux-toolkit-query"> Redux Toolkit Query APP</Link>
       </p>
     </>
   );
@@ -89,6 +91,10 @@ function App() {
           />
           {/* <Route path="/normal-redux" element={<ReduxComponent />} /> */}
           <Route path="/redux-toolkit" element={<ReduxToolkitComponent />} />
+          <Route
+            path="/redux-toolkit-query"
+            element={<ReduxToolkitQueryComponent />}
+          />
         </Routes>
       </BrowserRouter>
     </>
