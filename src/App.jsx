@@ -17,6 +17,7 @@ import ReduxComponent from "./apps/ReduxComponent";
 import ReduxToolkitComponent from "./apps/ReduxToolkitComponent";
 import ReduxToolkitQueryComponent from "./apps/ReduxToolkitQueryComponent";
 import TanstackQueryComponent from "./apps/TanstackQueryComponent";
+import ZustandAppComponent from "./apps/ZustandAppComponent";
 
 const IndexComp = () => {
   return (
@@ -68,6 +69,9 @@ const IndexComp = () => {
       <p>
         <Link to="/tanstack-query"> Tanstack Query APP</Link>
       </p>
+      <p>
+        <Link to="/zustand"> Zustand APP</Link>
+      </p>
     </>
   );
 };
@@ -100,6 +104,7 @@ function App() {
             element={<ReduxToolkitQueryComponent />}
           />
           <Route path="/tanstack-query" element={<TanstackQueryComponent />} />
+          <Route path="/zustand" element={<ZustandAppComponent />} />
         </Routes>
       </BrowserRouter>
     </>
