@@ -16,6 +16,7 @@ import CompoundSelectComponent from "./apps/CompoundSelectComponent";
 import ReduxComponent from "./apps/ReduxComponent";
 import ReduxToolkitComponent from "./apps/ReduxToolkitComponent";
 import ReduxToolkitQueryComponent from "./apps/ReduxToolkitQueryComponent";
+import TanstackQueryComponent from "./apps/TanstackQueryComponent";
 
 const IndexComp = () => {
   return (
@@ -64,6 +65,9 @@ const IndexComp = () => {
       <p>
         <Link to="/redux-toolkit-query"> Redux Toolkit Query APP</Link>
       </p>
+      <p>
+        <Link to="/tanstack-query"> Tanstack Query APP</Link>
+      </p>
     </>
   );
 };
@@ -95,6 +99,7 @@ function App() {
             path="/redux-toolkit-query"
             element={<ReduxToolkitQueryComponent />}
           />
+          <Route path="/tanstack-query" element={<TanstackQueryComponent />} />
         </Routes>
       </BrowserRouter>
     </>
