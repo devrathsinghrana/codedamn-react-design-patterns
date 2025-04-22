@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router";
 import SingletonComponent from "./apps/SingletonComponent";
 import "./App.css";
@@ -18,6 +17,7 @@ import ReduxToolkitComponent from "./apps/ReduxToolkitComponent";
 import ReduxToolkitQueryComponent from "./apps/ReduxToolkitQueryComponent";
 import TanstackQueryComponent from "./apps/TanstackQueryComponent";
 import ZustandAppComponent from "./apps/ZustandAppComponent";
+import DifferentDataFetchingTechniquesTableComponent from "./apps/DifferentDataFetchingTechniquesTableComponent";
 
 const IndexComp = () => {
   return (
