@@ -72,6 +72,11 @@ const IndexComp = () => {
       <p>
         <Link to="/zustand"> Zustand APP</Link>
       </p>
+      <p>
+        <Link to="/different-data-fetching-techniques-table">
+          DifferentDataFetchingTechniquesTableComponent APP
+        </Link>
+      </p>
     </>
   );
 };
@@ -105,6 +110,10 @@ function App() {
           />
           <Route path="/tanstack-query" element={<TanstackQueryComponent />} />
           <Route path="/zustand" element={<ZustandAppComponent />} />
+          <Route
+            path="/different-data-fetching-techniques-table"
+            element={<DifferentDataFetchingTechniquesTableComponent />}
+          />
         </Routes>
       </BrowserRouter>
     </>
