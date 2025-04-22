@@ -18,6 +18,7 @@ import ReduxToolkitQueryComponent from "./apps/ReduxToolkitQueryComponent";
 import TanstackQueryComponent from "./apps/TanstackQueryComponent";
 import ZustandAppComponent from "./apps/ZustandAppComponent";
 import DifferentDataFetchingTechniquesTableComponent from "./apps/DifferentDataFetchingTechniquesTableComponent";
+import SwrComponent from "./apps/SwrComponent";
 
 const IndexComp = () => {
   return (
@@ -77,6 +78,9 @@ const IndexComp = () => {
           DifferentDataFetchingTechniquesTableComponent APP
         </Link>
       </p>
+      <p>
+        <Link to="/swr"> SWR APP</Link>
+      </p>
     </>
   );
 };
@@ -110,6 +114,7 @@ function App() {
           />
           <Route path="/tanstack-query" element={<TanstackQueryComponent />} />
           <Route path="/zustand" element={<ZustandAppComponent />} />
+          <Route path="/swr" element={<SwrComponent />} />
           <Route
             path="/different-data-fetching-techniques-table"
             element={<DifferentDataFetchingTechniquesTableComponent />}
