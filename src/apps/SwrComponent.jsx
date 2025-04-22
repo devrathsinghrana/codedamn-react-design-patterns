@@ -12,9 +12,10 @@ const SwrComponent = () => {
   const [pageNumber, setPageNumber] = useState(1);
 
   const { data, error, isValidating } = useSWR(
-    pageNumber % 2 === 0
-      ? [`https://reqres.in/api/users?page=${pageNumber}`, authToken, 7]
-      : null,
+    () =>
+      pageNumber % 2 === 0
+        ? [`https://reqres.in/api/users?page=${pageNumber}`, authToken, 7]
+        : null,
     fetcher
   );
 
